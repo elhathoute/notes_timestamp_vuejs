@@ -41,7 +41,7 @@ const getters = {
 
 const inputComponent = {
   template:`<input
-   placeholder='enter a note'
+   placeholder='enter name:price en DH'
    v-model="input"
    @keyup.enter="monitorEnterKey"
    class="input is-small" type="text" />`,
@@ -63,7 +63,7 @@ const inputComponent = {
 const noteCountComponent = {
   template:
   `<div class="note-count">
-  Note count: <strong>{{ noteCount }}</strong>
+  Total: <strong>{{ noteCount }}</strong>
   </div>`,
   computed: {
   noteCount() {
